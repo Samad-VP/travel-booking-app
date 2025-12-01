@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skylo Travel — Explore. Dream. Discover.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#">Skylo</a>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="#signin" class="auth-btn signin">Sign In</a>
+        <a href="#signup" class="auth-btn signup">Sign Up</a>
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" role="region" aria-label="Hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1 class="hero-title">Explore the world with Skylo</h1>
+          <p class="hero-sub">Curated trips, real experiences — plan your next escape in minutes.</p>
+          <a class="btn cta" href="#destinations">Discover Destinations</a>
+        </div>
+      </div>
+      <img src="images/hero.jpg" alt="A scenic travel destination" class="hero-img" loading="eager" decoding="async" />
+    </section>
+
+    <!-- FEATURES / ABOUT -->
+    <section id="features" class="features container" role="region" aria-label="Features">
+      <h2 class="section-title">Why choose Skylo?</h2>
+      <p class="lead">We make travel planning effortless — personalized recommendations, instant booking, and 24/7 support.</p>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Personalized Trips</h3>
+          <p>Tailored recommendations based on your preferences and travel history.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Easy Booking</h3>
+          <p>Fast checkout with secure payments and flexible cancellation options.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>24/7 Support</h3>
+          <p>Friendly travel experts available whenever you need assistance.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Best Price Guarantee</h3>
+          <p>We match any lower price and offer exclusive deals you won't find anywhere else.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Local Experiences</h3>
+          <p>Discover authentic cultural experiences guided by local travel experts.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Travel Insurance Included</h3>
+          <p>Comprehensive coverage for peace of mind on every journey you take with us.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="destinations" role="region" aria-label="Popular destinations">
+      <div class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+        <p class="lead">Handpicked places to inspire your next trip.</p>
+
+        <div class="cards">
+          <article class="card">
+            <img src="images/destination1.png" alt="Beach destination" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Maldives</h3>
+              <p>Crystal-clear waters, private overwater bungalows, and world-class snorkeling.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/destination2.jpg" alt="Mountain destination" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Swiss Alps</h3>
+              <p>Snow-capped peaks, scenic hikes, and cozy alpine villages.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/destination3.jpg" alt="City destination" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Kyoto</h3>
+              <p>Ancient temples, tranquil gardens, and seasonal cultural festivals.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/destination4.jpg" alt="Tropical beach resort" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Bali</h3>
+              <p>Lush rice terraces, ancient temples, and pristine tropical beaches.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/destination5.jpg" alt="Mountain landscape" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Patagonia</h3>
+              <p>Rugged mountains, glacier trekking, and untamed wilderness adventure.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/destination6.jpg" alt="Historic architecture" class="card-img" loading="eager" decoding="async" />
+            <div class="card-body">
+              <h3>Rome</h3>
+              <p>Ancient ruins, Renaissance art, and world-class cuisine in the eternal city.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container" role="region" aria-label="Contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="lead">Sign up for updates or send us a message — we’ll get back shortly.</p>
+
+      <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required minlength="2" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="10" rows="5" placeholder="Tell us about your travel plans..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3 class="footer-title">Skylo Travel</h3>
+        <p class="footer-desc">Your trusted companion for unforgettable journeys across the globe.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Skylo Travel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
