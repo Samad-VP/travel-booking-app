@@ -25,19 +25,13 @@ SKYLO/
 🚀 Features
 
 Responsive navbar with hamburger menu
-
 Hero banner with background image
-
 About/Features section
-
 Destinations showcase (6 images)
-
 Fully responsive layout using CSS & JS
 
 🛠️ Technologies Used
-
 HTML • CSS • JavaScript
 
 ▶️ How to Run
-
 Open index.html in any web browser.
